@@ -14,9 +14,10 @@ def url_list():
 	c3='&d=PTXT'
 	str1='http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=0&p=1&f=S&l=50&Query=IC%2F%28Toronto+OR+Ottawa+OR+Mississauga+OR+Hamilton+OR+Brampton+OR+London+OR+Markham+OR+Vaughan+OR+Windsor+OR+Kitchener+OR+Burlington+OR+Sudbury+OR+Oshawa+OR+%22St+Catherines%22+OR+Barrie+OR+Cambridge+OR+Kingston+OR+Guelph+OR+%22Thunder+Bay%22+OR+Waterloo+OR+Woodstock+OR+Kanata%29+AND+ICN%2FCA+AND+ISD%2F'
 	str2='http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=0&p=1&f=S&l=50&Query=IC%2F%28Montreal+OR+Quebec+OR+Gatineau+OR+Sherbrooke+OR+Trois-Rivieres+OR+Chicoutimi+OR+Richelieu+OR+Chaeauguay+OR+Drummonville+OR+Saint-Jerome+OR+Saint-Hyacinthe%29+AND+ICN%2FCA+AND+ISD%2F'
-	for j in range(1996,2011):
+	str3='http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=0&p=1&f=S&l=50&Query=ICN%2FCA+AND%0D%0AISD%2F'
+	for j in range(1976,1996):
 		for i in range(4):
-			url=str2+month1[i]+c1+day1[i]+c1+str(j)+c2+month2[i]+c1+day2[i]+c1+str(j)+c3
+			url=str3+month1[i]+c1+day1[i]+c1+str(j)+c2+month2[i]+c1+day2[i]+c1+str(j)+c3
 			list.append(url)
 
 	return list
